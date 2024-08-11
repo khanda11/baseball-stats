@@ -1,0 +1,71 @@
+{
+    "12345": {
+      "person": {
+        "id": 12345,
+        "fullName": "John Doe"
+      },
+      "parentTeamId": 1,
+      "stats": {
+        "pitching": {
+          "runs": 5,
+          "doubles": 2,
+          "triples": 1,
+          "homeRuns": 3,
+          "strikeOuts": 10,
+          "baseOnBalls": 4,
+          "hits": 12,
+          "atBats": 20,
+          "stolenBases": 1,
+          "numberOfPitches": 100,
+          "inningsPitched": 9.0,
+          "wins": 1,
+          "losses": 0,
+          "holds": 1,
+          "blownSaves": 0,
+          "earnedRuns": 5,
+          "rbi": 4
+        }
+      },
+      "seasonStats": {
+        "pitching": {
+          "era": 3.50,
+          "inningsPitched": 150.0
+        }
+      }
+    },
+    "67890": {
+      "person": {
+        "id": 67890,
+        "fullName": "Jane Smith"
+      },
+      "parentTeamId": 2,
+      "stats": {
+        "pitching": {
+          "runs": 8,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "strikeOuts": 12,
+          "baseOnBalls": 5,
+          "hits": 14,
+          "atBats": 25,
+          "stolenBases": 2,
+          "numberOfPitches": 110,
+          "inningsPitched": 8.0,
+          "wins": 0,
+          "losses": 1,
+          "holds": 0,
+          "blownSaves": 1,
+          "earnedRuns": 8,
+          "rbi": 3
+        }
+      },
+      "seasonStats": {
+        "pitching": {
+          "era": 4.20,
+          "inningsPitched": 140.0
+        }
+      }
+    }
+  }
+  
