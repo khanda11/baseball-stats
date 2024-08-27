@@ -1,5 +1,13 @@
 Chin Music is an interactive web application designed for baseball enthusiasts to explore, predict, and play with MLB statistics. The app provides a comprehensive platform for engaging with historical and predicted player statistics, learning about MLB stat leaders, and testing knowledge with fun games.
 
+
+## Demo
+
+[![Watch the demo](https://www.loom.com/share/c02ab1f0d0f0430a8d42c1f2f46651f4?t=0)
+
+Click the image above to watch the demo of the "Chin Music" app!
+
+
 AI-Driven Predictions: Leverage AI models to predict future performance based on historical data.
 Interactive Stats Exploration: Rediscover MLB stat leaders with powerful search and filtering tools.
 Guess the Player Game: Test your knowledge of MLB stat leaders with a fun, interactive guessing game.
