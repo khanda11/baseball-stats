@@ -3,7 +3,7 @@ Chin Music is an interactive web application designed for baseball enthusiasts t
 
 ## Demo
 
-[![Watch the demo](https://www.loom.com/share/c02ab1f0d0f0430a8d42c1f2f46651f4?t=0)
+[[Watch the demo!](https://www.loom.com/share/c02ab1f0d0f0430a8d42c1f2f46651f4?t=0)
 
 Click the image above to watch the demo of the "Chin Music" app!
 
