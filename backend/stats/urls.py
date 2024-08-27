@@ -8,5 +8,5 @@ router.register(r'stat-leaders', views.StatLeaderViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('random-stat-leader/', views.get_random_stat_leader, name='random-stat-leader'),
-    path('check-guess/', views.check_guess, name='check-guess'),
+    path('check-guess/', views.check_guess, name='check-guess'),  
 ]

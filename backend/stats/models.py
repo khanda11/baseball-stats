@@ -1,9 +1,9 @@
-# stats/models.py
+
 
 from django.db import models
 
 class StatLeader(models.Model):
-    player_id = models.IntegerField(null=True, blank=True)  # Allow null and blank values
+    player_id = models.IntegerField(null=True, blank=True)  
     player_name = models.CharField(max_length=100)
     stat_category = models.CharField(max_length=100)
     stat_value = models.FloatField()

@@ -1,32 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './components/HomePage.js';
 import StatLeaders from './components/StatLeaders';
 import GuessThePlayer from './components/GuessThePlayer';
+import PlayerComparison from './components/PlayerComparison.js';
+import StatPrediction from './components/StatPrediction'; // Import the new component
 import './App.css';
+import logo from './assets/Chin Music_transparent-.png'; // Ensure correct path to the logo
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <h1>Welcome to MLB Stats</h1>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Guess the Player</Link>
-              </li>
-              <li>
-                <Link to="/stat-leaders">Stat Leaders</Link>
-              </li>
-            </ul>
-          </nav>
+        <header className="app-header">
+          <Link to="/">
+            <img src={logo} alt="Chin Music Logo" className="header-logo" />
+          </Link>
         </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<GuessThePlayer />} />
-            <Route path="/stat-leaders" element={<StatLeaders />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/interactive-player" element={<StatLeaders />} />
+          <Route path="/guess-the-player" element={<GuessThePlayer />} />
+          <Route path="/player-comparison" element={<PlayerComparison />} />
+          <Route path="/stat-prediction" element={<StatPrediction statCategory="HomeRuns" />} /> {/* Example route */}
+        </Routes>
       </div>
     </Router>
   );

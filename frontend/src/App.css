@@ -1,46 +1,38 @@
-.App {
-  text-align: center;
+/* Basic reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container for the whole app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+  position: fixed; /* Ensure it stays in the corner even when scrolling */
+  top: 10px;
+  right: 10px; /* Change from left to right */
+  z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 30vh;
+.header-logo {
+  width: 90px; /* Adjust the size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Main content */
+main {
+  padding-top: 60px; /* Ensure content is below the header */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container {
-  margin-top: 20px;
-}
-
-.mb-3 {
-  margin-bottom: 1rem;
-}
+/* Other styles for buttons, forms, etc. */

@@ -53,16 +53,16 @@ class Command(BaseCommand):
             'Chicago White Sox', 'Los Angeles Angels', 'Los Angeles Dodgers',
             'New York Yankees', 'Kansas City Royals', 'New York Mets',
             'San Diego Padres', 'San Francisco Giants', 'St. Louis Cardinals',
-            'Toronto Blue Jays', 'Tampa Bay Rays'
+            'Toronto Blue Jays', 'Tampa Bay Rays', 'Boston Red Sox'
         ]
 
         two_word_teams = [
-            'Miami Marlins', 'Boston Red Sox', 'Chicago Cubs',
+            'Miami Marlins', 'Chicago Cubs',
             'Cleveland Guardians', 'Detroit Tigers', 'Houston Astros', 'Seattle Mariners',
             'Texas Rangers', 'Oakland Athletics', 'Baltimore Orioles', 'Minnesota Twins',
             'Philadelphia Phillies', 'Pittsburgh Pirates', 'Washington Nationals',
             'Arizona Diamondbacks', 'Colorado Rockies', 'Atlanta Braves', 
-            'Milwaukee Brewers', 'Cincinnati Reds'
+            'Milwaukee Brewers', 'Cincinnati Reds', 'Cleveland Indians', 'Montreal Expos', 'Florida Marlins'
         ]
 
         try:
@@ -121,7 +121,7 @@ class Command(BaseCommand):
         ]
 
         current_year = 2023
-        for year in range(current_year, current_year - 10, -1):
+        for year in range(current_year, current_year - 50, -1):
             for category in hitting_categories:
                 self.fetch_stat_leaders(category, 'hitting', year)
             
@@ -129,3 +129,5 @@ class Command(BaseCommand):
                 self.fetch_stat_leaders(category, 'pitching', year)
 
         self.stdout.write(self.style.SUCCESS('Successfully fetched and inserted MLB stat leaders for the last 10 years'))
+
+
